@@ -83,7 +83,6 @@ create_timestamped_dir(dir)
 # Kick off the capture process.
 capture_image()
 
-# TODO: These may not get called after the end of the threading process...
 # Create an animated gif (Requires ImageMagick).
 if config['create_gif']:
     command = 'convert -delay 10 -loop 0 ' + dir + '/image*.jpg ' + dir + '/timelapse.gif'  # noqa
